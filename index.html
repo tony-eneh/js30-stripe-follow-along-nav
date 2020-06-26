@@ -6,6 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Feel the Nav</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: no-repeat;
+            background-image: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            /* background-size: cover; */
+            height: 100vh;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            /*make all submenu items equal*/
+            flex-basis: 100px;
+            flex-grow: 1;
+            position: relative;
+        }
+        
+        nav ul li a+div {
+            position: absolute;
+            width: 200%;
+        }
+        
+        img {
+            height: 100px;
+        }
+        /* .menu-details {
+            display: none;
+        } */
+    </style>
 </head>
 
 <body>
